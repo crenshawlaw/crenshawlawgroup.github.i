@@ -58,3 +58,15 @@ body {
 h2 {
   color: #0a1a33;
 }
+
+/* Contact links */
+.contact-link {
+  color: #0a1a33;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #1a2f55;
+}
