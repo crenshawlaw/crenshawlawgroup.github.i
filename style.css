@@ -2,6 +2,10 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+.hero-title {
+  font-family: 'Playfair Display', serif;
+}
+
 .bg-navy {
   background-color: #0a1a33 !important;
 }
@@ -54,27 +58,12 @@ body {
   font-weight: bold;
 }
 
-/* Section headings */
-h2 {
-  color: #0a1a33;
-}
-
-/* Contact links */
-.contact-link {
-  color: #0a1a33;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.contact-link:hover {
-  text-decoration: underline;
-  color: #1a2f55;
-}
-
-/* Blue background sections */
+/* Section styling */
 .section-navy {
   background-color: #0a1a33;
   color: #ffffff;
+  position: relative;
+  padding: 5rem 0;
 }
 
 .section-navy h2,
@@ -83,6 +72,7 @@ h2 {
   color: #ffffff;
 }
 
+/* Cards */
 .card {
   background-color: #1a2f55;
   color: #ffffff;
@@ -96,4 +86,32 @@ h2 {
 
 .card .card-text {
   color: #e0e0e0;
+}
+
+/* Separators */
+.section-navy::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.no-separator::after {
+  display: none;
+}
+
+/* Contact links */
+.contact-link {
+  color: #4da3ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: #79bbff;
 }
