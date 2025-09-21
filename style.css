@@ -70,3 +70,30 @@ h2 {
   text-decoration: underline;
   color: #1a2f55;
 }
+
+/* Blue background sections */
+.section-navy {
+  background-color: #0a1a33;
+  color: #ffffff;
+}
+
+.section-navy h2,
+.section-navy h5,
+.section-navy p {
+  color: #ffffff;
+}
+
+.card {
+  background-color: #1a2f55;
+  color: #ffffff;
+  border: none;
+}
+
+.card .card-title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card .card-text {
+  color: #e0e0e0;
+}
