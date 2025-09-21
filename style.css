@@ -1,168 +1,60 @@
-/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #fff;
+  font-family: 'Merriweather', serif;
 }
 
-header nav {
-  background-color: #0a1a33; /* navy */
-  padding: 1em;
+.bg-navy {
+  background-color: #0a1a33 !important;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
+.btn-navy {
+  background-color: #0a1a33;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
 }
 
-nav a.active {
-  border-bottom: 2px solid white;
+.btn-navy:hover {
+  background-color: #1a2f55;
+  color: white;
 }
 
-.hero {
+/* Hero section */
+.hero-section {
   position: relative;
-  text-align: center;
-  color: white;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: brightness(70%);
-}
-
-.hero-text {
+.hero-bg {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+  z-index: -2;
 }
 
-.services {
-  display: flex;
-  justify-content: space-around;
-  padding: 2em;
-  background-color: #f5f5f5;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 26, 51, 0.4);
+  z-index: -1;
 }
 
-.service-box {
-  max-width: 300px;
-  padding: 1em;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
-.about {
-  display: flex;
-  align-items: center;
-  padding: 2em;
-}
-
-.about img {
-  width: 50%;
-  margin-right: 2em;
-}
-
-.about-text {
-  max-width: 500px;
-}
-
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2em;
-}
-
-.contact-info {
-  flex: 1;
-  margin-right: 2em;
-}
-
-.contact-form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  border: 1px solid #ccc;
-}
-
-.contact-form button {
-  background-color: #0a1a33;
-  color: white;
-  padding: 0.7em;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 2em;
-}
-
-/* Formspree form styling */
-.fs-form {
-  max-width: 500px;
-  margin-top: 2em;
-}
-
-.fs-field {
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column;
-}
-
-.fs-label {
-  margin-bottom: 0.5em;
-  font-weight: bold;
-  color: #0a1a33; /* navy */
-}
-
-.fs-input,
-.fs-textarea {
-  padding: 0.6em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.fs-textarea {
-  min-height: 120px;
-}
-
-.fs-button {
-  background-color: #0a1a33;
-  color: white;
-  padding: 0.8em 1.5em;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+/* Navbar */
+.navbar-brand, .nav-link {
   font-weight: bold;
 }
 
-.fs-button:hover {
-  background-color: #1a2f55; /* lighter navy */
+/* Section headings */
+h2 {
+  color: #0a1a33;
 }
