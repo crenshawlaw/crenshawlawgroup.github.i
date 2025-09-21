@@ -123,3 +123,46 @@ footer {
   padding: 1em;
   margin-top: 2em;
 }
+
+/* Formspree form styling */
+.fs-form {
+  max-width: 500px;
+  margin-top: 2em;
+}
+
+.fs-field {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.fs-label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #0a1a33; /* navy */
+}
+
+.fs-input,
+.fs-textarea {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fs-textarea {
+  min-height: 120px;
+}
+
+.fs-button {
+  background-color: #0a1a33;
+  color: white;
+  padding: 0.8em 1.5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.fs-button:hover {
+  background-color: #1a2f55; /* lighter navy */
+}
