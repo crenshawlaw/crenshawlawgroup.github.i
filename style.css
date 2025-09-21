@@ -115,3 +115,42 @@ body {
   text-decoration: underline;
   color: #79bbff;
 }
+/* Contact form styling */
+.contact-form {
+  background-color: rgba(26, 47, 85, 0.9); /* semi-transparent navy */
+  color: #ffffff;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #0a1a33;
+  border: 1px solid #444;
+  color: #ffffff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbbbbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4da3ff;
+  box-shadow: 0 0 5px rgba(77, 163, 255, 0.5);
+}
+
+.contact-form button {
+  background-color: #4da3ff;
+  color: #ffffff;
+  border: none;
+}
+
+.contact-form button:hover {
+  background-color: #79bbff;
+}
